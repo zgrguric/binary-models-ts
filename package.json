@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "browserify": "tsc && browserify -r .:binary-models -o dist/browserified.js",
     "test:unit": "jest --config=jest.config.unit.js",
     "lint": "eslint ./src/**/* --ext .ts",
     "format": "npx prettier --write ./src"
